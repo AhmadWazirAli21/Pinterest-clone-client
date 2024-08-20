@@ -1,0 +1,152 @@
+.nav-conatiner{
+    width: 100%;
+    height: 80px;
+    padding: 4px 16px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+.nav-conatiner .left-side{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-conatiner .left-side  .logo img{
+    width: 30px;
+    height: 30px;
+}
+.nav-conatiner .left-side .home-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    background: #111111;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-conatiner .left-side .create-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-conatiner .right-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-conatiner .right-side .logout-btn{
+    width: 75px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border:none;
+    background: #CB1F27;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-conatiner .profile-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E9E9E9;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.nav-conatiner .profile-btn img{
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width:480px) {
+
+.nav-conatiner .right-side .logout-btn{
+    display: none;
+}
+
+}
+@media (max-width:374px) {
+  .nav-conatiner .left-side .home-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    background: #111111;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nav-conatiner .left-side .create-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nav-conatiner .profile-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E9E9E9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-conatiner .profile-btn img {
+ height: 40px;
+}
+
+
+}
+@media (max-width:316px) {
+  .nav-conatiner .left-side .home-btn{
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    background: #111111;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-conatiner .left-side .create-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.nav-conatiner .profile-btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E9E9E9;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .3s;
+}
+.nav-conatiner .profile-btn img{
+    height: 30px;
+}
+
+}

@@ -1,0 +1,108 @@
+.share-link-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    width: 100%;
+    background: #0000008d;
+    z-index: 999;
+}
+.share-link-container .social-share-modal{
+    display: flex;
+    flex-direction: column;
+}
+.share-link-container .social-share-modal .close {
+    z-index: 111;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: #CB1F27;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.share-link-container .social-share{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    display: grid;
+    grid-template:repeat(3 ,1fr) / repeat(3 ,1fr);
+    align-items: center;
+    background: #fff;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #3a3a3a;
+}
+.share-link-container .copy-link{
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9b9b9b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width:750px) {
+    .share-link-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: flex-end;
+    width: 100%;
+    background: #0000008d;
+    z-index: 999;
+}
+}
+@media (max-width:650px) {
+    .share-link-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: flex-end;
+    width: 100%;
+    background: #0000008d;
+    z-index: 999;
+}
+}
+@media (max-width:550px) {
+    .share-link-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: flex-end;
+    width: 100%;
+    background: #0000008d;
+    z-index: 999;
+}
+}
+@media (max-width:450px) {
+    .share-link-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: flex-end;
+    width: 100%;
+    background: #0000008d;
+    z-index: 999;
+}
+}

@@ -1,0 +1,20 @@
+.notfound-container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notfound-container img{
+    width:500px;
+}
+@media (max-width:450px) {
+    .notfound-container img{
+    width:250px;
+}
+}
+@media (max-width:350px) {
+    .notfound-container img{
+    width:250px;
+}
+}

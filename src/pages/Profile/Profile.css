@@ -1,0 +1,282 @@
+.profile-page-container{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    padding: 20px 0px;
+}
+.profile-page-container .upper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.profile-page-container .upper .avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background:#E9E9E9;
+    font-weight: 600;
+}
+.profile-page-container .upper .avatar img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-page-container .upper .username{
+    font-size: 36px;
+    font-weight: 600;
+}
+.profile-page-container .upper .name{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.profile-page-container .upper .name img{
+    width: 20px;
+}
+.profile-page-container .btns{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 20px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.profile-page-container .lower{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-page-container .lower ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.profile-page-container .lower ul li{
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-page-container .lower ul li:hover::after{
+        width:100%;
+        transition: .3s;
+}
+.profile-page-container .pins-container{
+    width: 90%;
+    padding:0px;
+    columns: 5;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.profile-page-container .add-first-pin button{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    background: #CB1F27;
+    color: #fff;
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.no-saved-pins {
+    align-self: center;
+    margin-top: 30px;
+    color: #CB1F27;
+    font-weight: 500;
+}
+@media (max-width:1000px) {
+    .profile-page-container .pins-container{
+    columns: 4;
+}
+}
+@media (max-width:815px) {
+    .profile-page-container .pins-container{
+    columns: 3;
+}
+}
+@media (max-width:550px) {
+    .profile-page-container .pins-container{
+    columns: 2;
+}
+}
+@media (max-width:475px) {
+    .profile-page-container .upper .avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background:#E9E9E9;
+    font-weight: 600;
+}
+.profile-page-container .upper .avatar img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-page-container .upper .username{
+    font-size: 26px;
+    font-weight: 600;
+}
+.profile-page-container .upper .name{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.profile-page-container .upper .name img{
+    width: 15px;
+}
+.profile-page-container .btns{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.profile-page-container .btns .logout{
+    background: #CB1F27;
+    color: #fff;
+}
+.profile-page-container .lower{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-page-container .lower ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.profile-page-container .lower ul li{
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+}
+.profile-page-container .edit{
+    position: absolute;
+    z-index: 111;
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    padding: 30px;
+    background: red;
+}
+.profile-page-container .lower ul li::after{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 2px;
+    bottom: -2px;
+    background: #CB1F27;
+    right: 0px;
+    transition: .3s;
+}
+.profile-page-container .lower ul li:hover::after{
+        width:100%;
+        transition: .3s;
+}
+}
+@media (max-width:443px) {
+    
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 20px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+}
+@media (max-width:393px) {
+    
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 20px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.profile-page-container .add-first-pin button{
+    width: 120px;
+    font-size: 14px;
+}
+}
+@media (max-width:338px) {
+    
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+}
+@media (max-width:300px) {
+    
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 15px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+}
+@media (max-width:280px) {
+    
+.profile-page-container .btns button{
+    background: #E9E9E9;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+}

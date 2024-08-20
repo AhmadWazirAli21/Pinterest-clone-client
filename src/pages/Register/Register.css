@@ -1,0 +1,73 @@
+.signup-page-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.signup-page-container img{
+    width: 50px;
+}
+.signup-page-container h1{
+    margin: 10px 0px;
+}
+ .error{
+    margin: 5px 0px ;
+    color: red;
+    font-size: 14px;
+}
+.signup-page-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signup-page-container form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.signup-page-container form .input label{
+    margin-left: 10px;
+    font-weight: 600;
+}
+.signup-page-container form .input input{
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: 4px solid rgb(229, 225, 225);
+}
+.signup-page-container form .input input:focus{
+    border: 4px solid #7FC1FF;
+}
+.signup-page-container form button{
+    background: red;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.signup-page-container  a{
+    text-decoration: none;
+    color: red;
+}
+@media (max-width:420px) {
+    .signup-page-container h1{
+        font-size: 25px;
+    }
+    .signup-page-container form .input input{
+    width: 270px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: 4px solid rgb(229, 225, 225);
+}
+}

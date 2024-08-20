@@ -1,0 +1,372 @@
+.pin-page-container{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.pin-page-container .pin-container{
+    width: 75%;
+    height: 850px;
+    box-shadow: 0px 0px 20px #cecdcd;
+    border-radius: 30px;
+    display: flex;
+}
+.pin-page-container .pin-container .left-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pin-page-container .pin-container .left-side img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    object-fit:cover;
+}
+.pin-page-container .pin-container .right-side{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+.pin-page-container .pin-container .right-side .upper{
+    display: flex;
+    flex-direction: column;
+}
+.pin-page-container .pin-container .right-side .upper .upper-btns{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    width: 100%;
+}
+.pin-page-container .pin-container .right-side .upper .upper-btns .delete-pin,
+.pin-page-container .pin-container .right-side .upper .upper-btns .update-pin{
+    background: #d4d2d2;
+}
+.pin-page-container .pin-container .right-side .upper button{
+    width: 70px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #cb1f27;
+    font-size: 15px;
+    cursor: pointer;
+}
+.pin-page-container .pin-container .right-side .upper .user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pin-page-container .pin-container .right-side .upper .user img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pin-page-container .pin-container .right-side .upper .user .u-un{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #E9E9E9;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names .username{
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names .name{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.pin-page-container .pin-container .lower{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pin-page-container .pin-container .lower .comments-p{
+    font-weight: 600;
+}
+.pin-page-container .pin-container .lower .comments{
+    display: flex;
+    max-height: 400px;
+    flex-direction: column;
+    gap: 20px;
+}
+.pin-page-container .pin-container .lower .comments .comments-container{
+    display: flex;
+    max-height: 400px;
+    overflow-y: scroll;
+    flex-direction: column; 
+    gap: 10px;
+}
+.pin-page-container .pin-container .lower .comments .comments-container .no-avatar{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    align-self: flex-start;
+    border-radius: 50%;
+    background: #E9E9E9;
+}
+.no-comms{
+    align-self: center;
+    color: #cb1f27;
+}
+.pin-page-container .pin-container .lower .comments .user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pin-page-container .pin-container .lower .comments  .user img{
+    width: 65px;
+    height: 55px;
+    align-self: flex-start;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pin-page-container .pin-container .lower .comments  .user .user-names{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.pin-page-container .pin-container .lower .comments .user .user-names .date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pin-page-container .pin-container .lower .comments .user .user-names .date .comm-date{
+    font-size: 14px;
+    opacity: 0.8;
+}
+.pin-page-container .pin-container .lower .comments  .user .user-names .comment{
+    font-size: 14px;
+}
+.pin-page-container .pin-container .lower .comments  .user .user-names .username{
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.pin-page-container .pin-container .lower .comments  .user .user-names .name{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.pin-page-container .pin-container .add-comment{
+    display: flex;
+    height: 70px;
+    flex-direction: column ;
+    gap: 10px;
+    height: 20%;
+    justify-content: center;
+    justify-self: center;
+}
+.num-of-comments {
+    margin-top: 15px;
+}
+.pin-page-container .pin-container .add-comment .input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pin-page-container .pin-container .add-comment .input img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pin-page-container .pin-container .add-comment .input input{
+    width: 75%;
+    height: 60px;
+    margin: 0px 5px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 30px;
+}
+.pin-page-container .pin-container .add-comment .input .send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cb1f27;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.pin-page-container .pin-container .add-comment .input .input-no-avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E9E9E9;
+}
+.trach{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1145px) {
+    .pin-page-container .pin-container{
+    flex-direction: column;
+    height: 100%;
+}
+.pin-page-container .pin-container .left-side{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+.pin-page-container .pin-container .left-side img{
+    border-radius: 30px;
+}
+.pin-page-container .pin-container .right-side{
+    width: 100%;
+}
+
+}
+@media (max-width : 825px) {
+    .pin-page-container .pin-container{
+    flex-direction: column;
+    height: 100%;
+}
+    .pin-page-container .pin-container .right-side{
+    width: 100%;
+    padding: 15px;
+}
+}
+@media (max-width:700px) {
+.pin-page-container .pin-container {
+    height: 100%;
+    padding: 0px;
+ }
+.pin-page-container .pin-container .right-side .upper .user img{
+    width: 60px;
+    height: 60px;
+}
+.pin-page-container .pin-container .right-side .upper .user .u-un{
+    width: 60px;
+    height: 60px;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names .username{
+    font-weight: 600;
+    font-size: 15px;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names .name{
+    font-size: 14px;
+    opacity: 0.8;
+}   
+}
+
+
+
+@media (max-width:575px) {
+    .pin-page-container .pin-container {
+    height: 100%;
+    padding: 0px;
+ }
+.pin-page-container{
+    padding: 10px;
+}
+ .pin-page-container .pin-container {
+    width: 100%;
+ }
+   .pin-page-container .pin-container .left-side{
+    padding: 10px;
+  }
+.pin-page-container .pin-container .right-side .upper button{
+    width: 60px;
+    height: 45px;
+    font-size: 14px;
+}
+.pin-page-container .pin-container .right-side .upper .user img{
+    width: 55px;
+    height: 55px;
+}
+.pin-page-container .pin-container .right-side .upper .user .u-un{
+    width: 55px;
+    height: 55px;
+}
+.pin-page-container .pin-container .right-side .upper .user .user-names .username{
+    font-size: 14px;
+}
+.pin-page-container .pin-container .lower .desc{
+    font-size: 14px;
+}
+.pin-page-container .pin-container .lower .comments  .user .user-names .username {
+    font-size: 13px;
+}
+.pin-page-container .pin-container .lower .comments .user .user-names .date .comm-date{
+    font-size: 11px;
+    opacity: 0.8;
+}
+.pin-page-container .pin-container .add-comment .input img{
+    width: 60px;
+    height: 60px;
+}
+.pin-page-container .pin-container .add-comment .input input{
+    width: 70%;
+    height: 50px;
+}
+.pin-page-container .pin-container .add-comment .input .send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cb1f27;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.pin-page-container .pin-container .lower .comments .user .user-names .date .comm-date{
+    font-size: 11px;
+    opacity: 0.8;
+}
+}
+
+
+@media (max-width:470px) {
+     .pin-page-container .pin-container {
+    width: 100%
+ }
+  .pin-page-container .pin-container .left-side{
+    padding: 10px;
+  }
+.pin-page-container .pin-container .lower .comments  .user img{
+    width: 60px;
+    height: 50px;
+    align-self: flex-start;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pin-page-container .pin-container .right-side .upper .user .u-un{
+    width: 60px;
+    height: 60px;
+}
+}

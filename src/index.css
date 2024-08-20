@@ -1,0 +1,29 @@
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(193, 193, 193);
+}
+::-webkit-scrollbar-thumb{
+ background: rgb(222, 222, 222);
+ border-radius: 20px;
+}
+ .img-box{
+    max-width: 260px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    break-inside: avoid;
+    max-height: 470px;
+
+}
+.img-box img{
+    width: 100%;
+    max-height: 470px;
+    border-radius: 15px;
+    object-fit: cover;
+}
