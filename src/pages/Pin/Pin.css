@@ -134,8 +134,12 @@
     gap: 10px;
     align-items: center;
 }
+.pin-page-container .pin-container .lower .comments  .user .u-un{
+    width: 55px;
+    height: 55px;
+}
 .pin-page-container .pin-container .lower .comments  .user img{
-    width: 65px;
+    width: 55px;
     height: 55px;
     align-self: flex-start;
     border-radius: 50%;

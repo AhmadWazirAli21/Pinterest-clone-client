@@ -216,7 +216,6 @@ function Pin() {
                 <img
                   src={selectedPin?.userId?.avatar}
                   alt=""
-                  onClick={getAnyUser(selectedPin?.userId?._id)}
                 />
               ) : (
                 <div className="u-un">

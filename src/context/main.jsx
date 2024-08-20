@@ -115,6 +115,8 @@ const MainContextProvider = ({ children }) => {
         .then((res) => {
           setSelectedPin(res.data.pin);
           setSelectedPinComments(res.data.comments);
+          console.log(res.data.url);
+          
           navigate(res.data.url);
         });
     } catch (error) {

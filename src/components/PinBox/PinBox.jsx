@@ -6,8 +6,6 @@ import { useContext } from "react";
 function PinBox({ id, img }) {
   const {
     ckeckIsSaved,
-    // setSelectedPin,
-    // setSelectedPinComments,
     pinUrl,
     getPin
   } = useContext(MainContext);
